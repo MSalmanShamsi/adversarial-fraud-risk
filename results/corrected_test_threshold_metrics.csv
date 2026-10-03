@@ -1,0 +1,2 @@
+Model,Dataset,Threshold,True_Positives,False_Positives,False_Negatives,True_Negatives,Precision,Recall,F1,False_Positive_Rate,Alert_Rate,False_Alerts_Per_Detected_Fraud
+Behavioral Isotonic,September Test,0.145,639,315,1908,285011,0.6698113207547169,0.2508833922261484,0.36503856041131105,0.0011040003364572455,0.0033139613649074418,0.49295774647887325

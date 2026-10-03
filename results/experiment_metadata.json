@@ -1,0 +1,30 @@
+{
+  "original_threshold": 0.145,
+  "defense_threshold": 0.14035087719298245,
+  "feature_order": [
+    "TX_AMOUNT",
+    "TX_HOUR",
+    "TX_DAY_OF_WEEK_NUM",
+    "TX_MONTH",
+    "CUSTOMER_TX_COUNT_PREV",
+    "CUSTOMER_AMOUNT_DIFF",
+    "TERMINAL_TX_COUNT_PREV"
+  ],
+  "test_rows": 287873,
+  "test_fraud": 2547,
+  "amount_reductions": [
+    0.0,
+    0.05,
+    0.1,
+    0.15,
+    0.2
+  ],
+  "defense_selection": "Maximum F1 on 20%-amount-reduced validation data; threshold <= 0.145; alerts <= twice original clean validation alerts.",
+  "validation_alert_budget": 1532,
+  "historical_feature_rule": "Freeze historical averages and counts; recompute CUSTOMER_AMOUNT_DIFF after changing TX_AMOUNT.",
+  "versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.1.4",
+    "scikit_learn": "1.2.2"
+  }
+}
